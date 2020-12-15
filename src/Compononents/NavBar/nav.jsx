@@ -16,7 +16,7 @@ justify-content:space-between;
 .logo{
     position: relative;
     bottom:4rem;
-    color:red;
+    
 }
 
 
