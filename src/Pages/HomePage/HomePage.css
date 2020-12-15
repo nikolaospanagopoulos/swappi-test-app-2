@@ -1,0 +1,55 @@
+@font-face{
+    font-family: 'starwars';
+    src: url('../../Utilis/fonts/StarJedi-DGRW.ttf');
+  }
+
+  @font-face{
+    font-family: 'starwars-title';
+    src: url('../../Utilis/fonts/Starjhol.ttf');
+  }
+
+  
+.main-title{
+  font-family: 'starwars-title';
+  text-align: center;
+  font-size: 10rem;
+  position: relative;
+  bottom: 80px;
+  color: #ffe066;
+}
+
+.main-subtitle{
+  font-family: 'starwars';
+  color: #ffe066;
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  bottom: 90px;
+}
+
+
+.download-container{
+  text-align: center;
+    max-width: 100vw;
+}
+
+.download{
+  height: 50px;
+  margin: 0 auto;
+  color: #ffe066;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.5s all;
+  
+}
+.download:hover{
+  background-color:#ffe066 ;
+  color: black;
+}
+
+.download:active{
+  transform: scale(2.5);
+}

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React,{useState} from 'react'
+import HomePage from './Pages/HomePage/HomePage'
+import Background from './Compononents/Background/Background'
+import { BrowserRouter as Router,Route } from "react-router-dom";
+import StarsWarsIntro from './Compononents/StarWarsInto/StarWarsIntro'
+import Header from './Compononents/NavBar/nav'
+import PeoplePage from './Pages/PeoplePage/PeoplePage'
 function App() {
+  const [clicked,setClicked] = useState(true)
+  const clickHandler =() => {
+    setClicked(false)
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div onClick={()=>clickHandler()}>
+     {!clicked && <Header/>}
+     {!clicked && <Route path='/' exact component={HomePage}/>} 
+     {!clicked && <Route path='/people' exact component={PeoplePage}/>} 
+      {clicked && <StarsWarsIntro />}
+      <Background/>
     </div>
+    </Router>
   );
 }
 
