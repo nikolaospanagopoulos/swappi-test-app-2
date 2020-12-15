@@ -25,7 +25,7 @@ const StarWarsIntro = () => {
     </div>
     
     <p >It is a period of crisis. A rebel coronavirus, striking from a hidden country, has won its first victory against the good people of the world.</p>     
-    <p>During the battle, Rebel companies managed to steal secret plans to the virus ultimate RNA and they are making vaccines.</p>
+    <p>During the battle,Rebel companies managed to steal secret plans to the virus ultimate RNA and they are making vaccines.</p>
     <p>Pursued by the Trumps’s sinister agents, Pfizer races home aboard her vaccine, custodian of the stolen plans that can save the people and restore health to the earth…</p>
     <p>Click me!!</p>
 

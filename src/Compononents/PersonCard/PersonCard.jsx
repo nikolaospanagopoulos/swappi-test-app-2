@@ -23,20 +23,20 @@ const PersonCard = ({ person }) => {
         <h1> {person.name} </h1>
       </div>
       <div className="person-details">
-        <h3> height: {person.height} cm</h3>
-        <h3> mass: {person.mass} kg</h3>
-        <h3> hair color: {person.hair_color} </h3>
-        <h3> skin color: {person.skin_color} </h3>
-        <h3> eye color: {person.eye_color} </h3>
-        <h3> birth year: {person.birth_year} </h3>
-        <h3> gender: {person.gender} </h3>
-        <h3 onClick={unToggle}>
+        <h5> Height: {person.height} cm</h5>
+        <h5> Mass: {person.mass} kg</h5>
+        <h5> Hair color: {person.hair_color} </h5>
+        <h5> Skin color: {person.skin_color} </h5>
+        <h5> Eye color: {person.eye_color} </h5>
+        <h5> Birth year: {person.birth_year} </h5>
+        <h5> Gender: {person.gender} </h5>
+        <h5 onClick={unToggle}>
           {" "}
-          homeworld:{" "}
+          Homeworld:{" "}
           <a href={person.homeworld} target="_blank" rel="noreferrer">
             {person.homeworld}
           </a>{" "}
-        </h3>
+        </h5>
         <div>
           Films:
           <p> {showResults && person.films.length} </p>
