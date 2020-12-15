@@ -8,6 +8,11 @@ const MovieCard = ({ movie }) => {
   const unToggle = () => {
     setShowResults(!showResults);
   };
+
+// i use the toggle function to open and close my card on click
+// i use the untoggle function to keep the state from changing when a link is clicked
+// i map throught the results and i create links from each one
+
   return (
     <div className="card" onClick={() => toggle()}>
       <div className="container">
@@ -26,12 +31,18 @@ const MovieCard = ({ movie }) => {
           <p> {showResults && movie.characters.length} </p>
           <p onClick={unToggle}>
             {" "}
-            {showResults && movie.characters.map((character) => (
-              <a href={character}  key={character} target="_blank"  rel="noreferrer">
-                {" "}
-                {character}{" "}
-              </a>
-            ))}{" "}
+            {showResults &&
+              movie.characters.map((character) => (
+                <a
+                  href={character}
+                  key={character}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  {character}{" "}
+                </a>
+              ))}{" "}
           </p>
         </div>
         <div>
@@ -39,12 +50,13 @@ const MovieCard = ({ movie }) => {
           <p> {showResults && movie.planets.length} </p>
           <p onClick={unToggle}>
             {" "}
-            { showResults && movie.planets.map((planet) => (
-              <a href={planet}  key={planet} target="_blank"  rel="noreferrer">
-                {" "}
-                {planet}{" "}
-              </a>
-            ))}{" "}
+            {showResults &&
+              movie.planets.map((planet) => (
+                <a href={planet} key={planet} target="_blank" rel="noreferrer">
+                  {" "}
+                  {planet}{" "}
+                </a>
+              ))}{" "}
           </p>
         </div>
         <div>
@@ -52,12 +64,18 @@ const MovieCard = ({ movie }) => {
           <p> {showResults && movie.starships.length} </p>
           <p onClick={() => unToggle()}>
             {" "}
-            {showResults && movie.starships.map((starship) => (
-              <a key={starship} href={starship} target="_blank"  rel="noreferrer">
-                {" "}
-                {starship}{" "}
-              </a>
-            ))}{" "}
+            {showResults &&
+              movie.starships.map((starship) => (
+                <a
+                  key={starship}
+                  href={starship}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  {starship}{" "}
+                </a>
+              ))}{" "}
           </p>
         </div>
         <div>
@@ -65,12 +83,18 @@ const MovieCard = ({ movie }) => {
           <p> {showResults && movie.vehicles.length} </p>
           <p onClick={unToggle}>
             {" "}
-            { showResults && movie.vehicles.map((vehicle) => (
-              <a href={vehicle}  key={vehicle} target="_blank"  rel="noreferrer">
-                {" "}
-                {vehicle}{" "}
-              </a>
-            ))}{" "}
+            {showResults &&
+              movie.vehicles.map((vehicle) => (
+                <a
+                  href={vehicle}
+                  key={vehicle}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  {vehicle}{" "}
+                </a>
+              ))}{" "}
           </p>
         </div>
         <div>
@@ -78,12 +102,18 @@ const MovieCard = ({ movie }) => {
           <p> {showResults && movie.species.length} </p>
           <p onClick={unToggle}>
             {" "}
-            { showResults && movie.species.map((speciment) => (
-              <a href={speciment}  key={speciment} target="_blank"  rel="noreferrer">
-                {" "}
-                {speciment}{" "}
-              </a>
-            ))}{" "}
+            {showResults &&
+              movie.species.map((speciment) => (
+                <a
+                  href={speciment}
+                  key={speciment}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  {speciment}{" "}
+                </a>
+              ))}{" "}
           </p>
         </div>
       </div>

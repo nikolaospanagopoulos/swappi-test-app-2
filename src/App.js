@@ -12,6 +12,8 @@ function App() {
   const [clicked,setClicked] = useState(true)
   const clickHandler =() => {
     setClicked(false)
+
+    //with this hook , when i click on the intro it dissapears
 }
   return (
     <Router>

@@ -7,6 +7,10 @@ import './StarWarsIntro.css'
 
 const StarWarsIntro = () => {
     
+// i used this css animation to make the website more interesting
+
+
+
     return (  
         <div>
         <div className="fade"></div>

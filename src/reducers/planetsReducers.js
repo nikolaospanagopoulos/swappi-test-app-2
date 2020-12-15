@@ -1,5 +1,7 @@
 import {PLANET_LIST_REQUEST,PLANET_LIST_SUCCESS,PLANET_LIST_FAIL} from '../Constants/planetConstants'
 
+// planet reducers
+
 export const planetsReducer = (state = {planets:[]},action) => {
     switch (action.type) {
         case PLANET_LIST_REQUEST:

@@ -1,5 +1,6 @@
 import { MOVIE_LIST_FAIL, MOVIE_LIST_REQUEST, MOVIE_LIST_SUCCESS } from "../Constants/movieConstants"
 
+//movie reducers
 
 export const movieReducer = (state = {movies:[]},action) => {
     switch (action.type) {

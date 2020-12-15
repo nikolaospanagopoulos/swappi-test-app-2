@@ -4,13 +4,19 @@ import Loading from '../../Compononents/Loading/Loading'
 import Message from '../../Compononents/Message/Message';
 import {listMovies} from '../../actions/movieActions'
 import MovieCard from '../../Compononents/MovieCard/MovieCard'
+import './MoviePage.css'
 
 const MoviePage = () => {
+    
+    //i use dispatch to be able to use the action
   const dispatch = useDispatch();
+
+   //i use useSelector to select the part of the state that i want to use
   const movieList = useSelector((state) => state.movieList);
   const { loading, error, movies } = movieList;
 
   useEffect(() => {
+       // i call my action inside useEffect so that it can fire when the page renders
     dispatch(listMovies());
   }, [dispatch]);
 

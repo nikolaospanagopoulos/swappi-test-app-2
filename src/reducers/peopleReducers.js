@@ -1,5 +1,6 @@
 import { PEOPLE_LIST_FAIL, PEOPLE_LIST_REQUEST, PEOPLE_LIST_SUCCESS } from "../Constants/peopleConstants"
 
+//people reducers
 
 export const peopleReducer = (state = {people:[]},action) => {
     switch (action.type) {

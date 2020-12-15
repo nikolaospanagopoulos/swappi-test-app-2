@@ -5,6 +5,9 @@ import {peopleReducer} from './reducers/peopleReducers'
 import {composeWithDevTools} from 'redux-devtools-extension'
 import {movieReducer} from './reducers/movieReducers'
 
+//this is my redux state store 
+
+
 const reducer = combineReducers({
     planetList:planetsReducer,
     peopleList:peopleReducer,
