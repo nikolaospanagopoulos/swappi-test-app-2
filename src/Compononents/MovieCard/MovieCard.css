@@ -1,25 +1,31 @@
-
 @font-face{
     font-family: 'starwars-title';
-    src: url('../../Utilis/fonts/StarJediHollow.woff') ;
+    src: url('../../Utilis/fonts/StarJediHollow.woff');
   }
   
-  
+
 
 
 .container h1{
     color: #ffe066;
     position: relative;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'starwars-title';
 }
 
-.person-details{
+.movie-details{
     color: thistle;
 }
-.person-details a{
+.movie-details p{
     max-width: 100%;
-    color: #ffe066;
+   
+   
+}
+
+.movie-details a{
+    max-width: 100%;
+   color: #ffe066;
+   
 }
 .card{
     border: 2px solid  #ffe066;

@@ -15,7 +15,8 @@ justify-content:space-between;
 
 .logo{
     position: relative;
-    bottom:4rem
+    bottom:4rem;
+    color:red;
 }
 
 
@@ -28,7 +29,6 @@ const Header = () => {
     return ( 
         <Nav >
             <div className='logo'>
-               
             </div>
             <Burger/>
         </Nav>

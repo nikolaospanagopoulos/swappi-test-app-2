@@ -43,6 +43,9 @@
   border-radius: 10px;
   outline: none;
   transition: 0.5s all;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
   
 }
 .download:hover{
@@ -52,4 +55,14 @@
 
 .download:active{
   transform: scale(2.5);
+}
+
+@media screen and (max-width: 768px){
+  .main-title{
+    font-size: 4rem;
+    margin-top: 4rem;
+  }
+  .main-subtitle{
+    font-size: 2rem;
+  }
 }

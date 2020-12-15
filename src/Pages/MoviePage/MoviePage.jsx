@@ -2,32 +2,31 @@ import React,{useEffect} from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import Loading from '../../Compononents/Loading/Loading'
 import Message from '../../Compononents/Message/Message';
-import PersonCard from '../../Compononents/PersonCard/PersonCard'
-import {listPeople} from '../../actions/peopleActions'
-import './PeoplePage.css'
+import {listMovies} from '../../actions/movieActions'
+import MovieCard from '../../Compononents/MovieCard/MovieCard'
 
-const PeoplePage = () => {
+const MoviePage = () => {
   const dispatch = useDispatch();
-  const peopleList = useSelector((state) => state.peopleList);
-  const { loading, error, people } = peopleList;
+  const movieList = useSelector((state) => state.movieList);
+  const { loading, error, movies } = movieList;
 
   useEffect(() => {
-    dispatch(listPeople());
+    dispatch(listMovies());
   }, [dispatch]);
 
 
     return ( 
         <div>
-            <div className='peoplepage-instructions'>
-                <h3 className='people-instructions'>Click on a card to know more</h3>
+            <div className='moviepage-instructions'>
+                <h3 className='movie-instructions'>Click on a card to know more</h3>
             </div>
             {loading ? <Loading/> : error ? <Message color='red'> {error} </Message> : (
                 <div className="grid-container">
-                {people.map((person)=> {
+                {movies.map((movie)=> {
                     return(
                         
-                        <div key={person.height}  className='grid-item'>
-                            <PersonCard person={person}/>
+                        <div  key={movie.episode_id} className='grid-item'>
+                            <MovieCard movie={movie}/>
                         </div>
                     )
                 })}
@@ -38,4 +37,4 @@ const PeoplePage = () => {
      );
 }
  
-export default PeoplePage
+export default MoviePage

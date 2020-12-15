@@ -3,11 +3,12 @@ import thunk from 'redux-thunk'
 import {planetsReducer} from './reducers/planetsReducers'
 import {peopleReducer} from './reducers/peopleReducers'
 import {composeWithDevTools} from 'redux-devtools-extension'
-
+import {movieReducer} from './reducers/movieReducers'
 
 const reducer = combineReducers({
     planetList:planetsReducer,
-    peopleList:peopleReducer
+    peopleList:peopleReducer,
+    movieList:movieReducer
 })
 const initialState = {}
 

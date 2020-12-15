@@ -1,3 +1,15 @@
+@font-face{
+  font-family: 'starwars';
+  src: url('../../Utilis/fonts/StarJediHollow.woff');
+}
+
+@font-face{
+  font-family: 'starwars-title';
+  src: url('../../Utilis/fonts/Starjhol.ttf');
+}
+
+
+
 .grid-container {
   display: grid;
 
@@ -14,6 +26,17 @@
   display: flex;
   align-items: flex-start;
 }
+
+.peoplepage-instructions{
+  color: tan;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'starwars-title';
+}
+
+
+
+
 
 @media screen and (max-width: 950px) {
   .grid-container {
